@@ -143,28 +143,23 @@ class PierreBot extends Bot {
         this.place(...readKey(best_move))
     }
 }
-let pierre = new PierreBot(grid,display=true)
-let pierre_timeout = 1
+let pierre = new PierreBot(grid, display = true)
+let pierre_timeout = -1
 function play(bot, delay) {
-    if (pierre_timeout && !bot.dead) {
-        bot.choose()
-        // requestAnimationFrame(() => play(bot))
-        pierre_timeout = setTimeout(() => play(bot, delay), delay)
-    }
+    pierre_timeout = setTimeout(() => play(bot, delay), delay)
+    bot.choose()
 }
 
-document.addEventListener("keydown", function (event) {
-    if (event.key == "=") {
-        // pierre_timeout = 1;
-        play(pierre,333)
+function togglePierre() {
+    if (pierre_timeout == -1) {
+        play(pierre, 500)
     }
-})
-document.addEventListener("keydown", function (event) {
-    if (event.key == ")") {
-        // pierre_timeout = 0;
+    else {
         clearTimeout(pierre_timeout)
+        pierre_timeout = -1
     }
-})
+}
+document.querySelector('#bot').addEventListener("click", togglePierre)
 // while(pierre.grid.placed_pieces<1000){
 //     pierre.choose()
 // }
