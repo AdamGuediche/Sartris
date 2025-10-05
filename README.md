@@ -27,7 +27,7 @@
 * **Responsive and Accessible**
   Built to run directly in your browser at [sartris.netlify.app](https://sartris.netlify.app), with no installation required.
 
-## 🕹️ Gameplay
+## Gameplay
 
 * **Objective:** Stack falling tetrominoes to form complete horizontal lines and clear them.
 * **Modes:**
@@ -40,4 +40,4 @@
 ## Live Demo
 
 Play online here:
-👉 [https://sartris.netlify.app](https://sartris.netlify.app)
+[https://sartris.netlify.app](https://sartris.netlify.app)
