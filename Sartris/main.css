@@ -42,7 +42,7 @@ body{
 
 #counter_box
 {
-    background:transparent;
+    background:rgba(0, 0, 0, 0.8);
     border:0px
 }
 
