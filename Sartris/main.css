@@ -15,7 +15,8 @@ body{
     display:grid;
     position:absolute;
     grid-template-rows:auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    grid-template-columns:auto auto auto auto auto auto auto auto auto auto 
+    grid-template-columns:auto auto auto auto auto auto auto auto auto auto;
+    border: solid black 1px;
 }
 #queue
 {

@@ -552,8 +552,8 @@ interface.height = 880 * height_factor
 
 let visual_grid = document.querySelector("#grid")
 visual_grid.style.background=`rgba(50,50,50,${controls.opacity})` 
-visual_grid.style.left = 255 * height_factor + "px"
-visual_grid.style.top = 40 * height_factor + "px"
+visual_grid.style.left = 254 * height_factor + "px"
+visual_grid.style.top = 39 * height_factor + "px"
 let grid_minos_list = minos_grid(visual_grid, 20, 10)
 let queue_container = document.querySelector("#queue")
 queue_container.style.left = 712 * height_factor + "px"
