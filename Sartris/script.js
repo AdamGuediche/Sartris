@@ -131,6 +131,7 @@ function update_hold(grid) {
 let pc_node = document.querySelector("#pc") 
 pc_node.style.left = 275 * height_factor + "px"
 pc_node.style.top = 120 * height_factor + "px"
+pc_node.style.height = 370 * height_factor + "px"
 let pc_timeout
 function perfect_clear_animation(){
     clearTimeout(pc_timeout)
@@ -672,4 +673,3 @@ function refresh_gravity() {
     update_piece(grid)
     gravity_timeout = setTimeout(refresh_gravity, 50)
 }
-
